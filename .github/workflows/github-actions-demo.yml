@@ -15,8 +15,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: npm install, build and test
-      - run: |
-          npm install
-          npm run build --if-present
-          npm test
+      - name: Run File
+      - run: python mapquest_parse-json_7.py
